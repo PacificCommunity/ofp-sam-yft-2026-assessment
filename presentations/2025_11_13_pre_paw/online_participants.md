@@ -9,7 +9,7 @@
 - Jennifer
 - Joseph W
 - Junior Ajawas
-- Leyla Knittweis
+- Leyla Knittweis (NZ)
 - Mi Kyung Lee (Korea)
 - Sebastien G
 - Simon Hoyle
