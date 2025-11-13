@@ -2,7 +2,7 @@
 - Carolina
 - Curro Abascal (EU)
 - Darcy Webber
-- Eric Nsysu Chang
+- Eric Chang
 - Haikun Xu
 - Hirotaka Ijima
 - Isidro Tanangonan (Philippines)
@@ -11,7 +11,7 @@
 - Junior Ajawas
 - Leyla Knittweis (NZ)
 - Mi Kyung Lee (Korea)
-- Sebastien G
+- Rujia Bi
 - Simon Hoyle
 - Sisong Dong (China)
 - Steve Brouwer (PNA)
