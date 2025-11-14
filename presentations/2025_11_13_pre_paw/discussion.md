@@ -21,10 +21,10 @@ Possible benefits of converting weights to lengths:
    that into account when we convert weights to lengths outside the model,
    whereas MFCL only supports one length-weight relationship for all regions.
 
-3. If we see temporal variability in the length-weight relationship, we can take
+3. If we see decadal variability in the length-weight relationship, we can take
    that into account when we convert weights to lengths outside the model,
    whereas MFCL only supports one length-weight relationship for the entire
-   assessment period.
+   assessment period from 1950 to 2024.
 
 4. MFCL does not support unequal bin widths like SS3 does. Weight comps are
    slightly more useful when using software that supports unequal bin widths.
