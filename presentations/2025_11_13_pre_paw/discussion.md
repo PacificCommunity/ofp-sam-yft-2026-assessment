@@ -11,6 +11,24 @@ come from the equatorial region, while the weight comps cover both regions.
 
 Converting weights to lengths may not solve any problems.
 
+Possible benefits of converting weights to lengths:
+
+1. We may have the raw weight data in finer resolution than the MFCL input
+   format. Therefore, we can do a better job converting the weights to lengths
+   outside the model than MFCL can do inside the model.
+
+2. If we see regional variability in the length-weight relationship, we can take
+   that into account when we convert weights to lengths outside the model,
+   whereas MFCL only supports one length-weight relationship for all regions.
+
+3. If we see temporal variability in the length-weight relationship, we can take
+   that into account when we convert weights to lengths outside the model,
+   whereas MFCL only supports one length-weight relationship for the entire
+   assessment period.
+
+4. MFCL does not support unequal bin widths like SS3 does. Weight comps are
+   slightly more useful when using software that supports unequal bin widths.
+
 ## Spatially varying growth
 
 It seems likely that growth varibes between regions. However, we may not have
