@@ -10,17 +10,23 @@
 - Hirotaka Ijima
 - Isidro Tanangonan (Philippines)
 - Jennifer
+- Jizhang Zhu
 - Joseph W
 - Jun Torres (Philippines)
 - Junior Ajawas
 - Leyla Knittweis (NZ)
+- Mary Charn Baculio (Philippines)
 - Mi Kyung Lee (Korea)
+- Mingfeng Jiang (China)
 - Noimie Rose Dicidiquin
 - Rujia Bi
+- Shiyu Yang
 - Simon Hoyle
 - Sisong Dong (China)
 - Steve Brouwer (PNA)
 - Sungkwon Soh
+- Suzette Barcoma
 - Syafii Suffendi (Brunei)
 - Yi-Jay Chang
+- Zhe Geng
 - Zi Wei Yeh (Chinese Taipei)
