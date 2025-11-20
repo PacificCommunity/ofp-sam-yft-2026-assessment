@@ -1,4 +1,6 @@
 - Alexandre Pons
+- Betty Sailivale
+- Brian Kumasi (PNA)
 - Carolina
 - Curro Abascal (EU)
 - Darcy Webber
@@ -9,9 +11,11 @@
 - Isidro Tanangonan (Philippines)
 - Jennifer
 - Joseph W
+- Jun Torres (Philippines)
 - Junior Ajawas
 - Leyla Knittweis (NZ)
 - Mi Kyung Lee (Korea)
+- Noimie Rose Dicidiquin
 - Rujia Bi
 - Simon Hoyle
 - Sisong Dong (China)
@@ -19,3 +23,4 @@
 - Sungkwon Soh
 - Syafii Suffendi (Brunei)
 - Yi-Jay Chang
+- Zi Wei Yeh (Chinese Taipei)
