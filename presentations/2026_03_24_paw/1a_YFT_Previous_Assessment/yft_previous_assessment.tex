@@ -1,0 +1,191 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{spc}
+\usepackage{textpos}
+\begin{document}
+
+\begin{frame}
+  \title{\vspace{-5ex}\darkblue Yellowfin 2026 Assessment\\[2ex]
+    \it\large\darkgray Initial Discussion Topics}
+  \author{\vspace{-10ex}\darkgray\bf Arni Magnusson}
+  \date{\darkgreen SPC Pre-PAW Meeting\\[0.5ex]
+    13 November 2025}
+  \titlepage
+  \begin{textblock}{0}(10,0.5)
+    \includegraphics[width=4cm]{fish_yellowfin}
+  \end{textblock}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Overview}
+  \vspace{2ex}
+  \begin{itemize}
+    \item[] {\bf\darkblue Innovations in 2023 Assessment}
+    \comment{simplified regional structure, Lorenzen M,\\[1ex]
+      \h{38.5ex} catch-conditioned, estimation uncertainty}\\[4ex]
+    \item[] {\bf\darkblue Issues in 2023 Assessment}
+    \comment{convergence/jittering, narrow confidence intervals,\\[1ex]
+      \h{32.2ex} likelihood conflict between length and weight comps}\\[4ex]
+    \item[] {\bf\darkblue New Issues}
+    \comment{uncertainty about Indonesian catches}\\[4ex]
+    \item[] {\bf\darkblue New Features in MULTIFAN-CL}
+    \comment{length-based selectivity}\\[4ex]
+    \item[] {\bf\darkblue Things to Report to PAW}
+    \comment{initial findings related to the above}\\[4ex]
+  \end{itemize}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}\Large
+  \centering\darkgreen\bf Innovations in 2023 Assessment
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Simplified Regional Structure}
+  \includegraphics[width=0.47\textwidth]{previous_9_regions}
+  \raisebox{13ex}{$\Rightarrow$}
+  \includegraphics[width=0.47\textwidth]{previous_5_regions}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Lorenzen Natural Mortality}
+  \vspace{4ex}
+  \centering\includegraphics[height=0.6\textheight]{natmort}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Catch-Conditioned Method}\small
+  MULTIFAN-CL User Manual, section 4.5:\\[3ex]
+  \includegraphics[width=\textwidth]{catch_conditioned}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Estimation Uncertainty}
+  \vspace{1ex}
+  \centering\includegraphics[height=0.7\textheight]{estimation_uncertainty}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}\Large
+  \centering\darkgreen\bf Issues in 2023 Assessment
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Convergence and Jittering}
+  \vspace{1ex}
+  \centering\includegraphics[height=0.65\textheight]{jittering}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Narrow Confidence Intervals}
+  \begin{itemize}
+    \item Incorporating estimation uncertainty had no real effect on the overall
+    uncertainty.\\[0.5ex]
+    For example, the confidence interval for
+    $SB_\mathrm{recent}/SB_{F=0}$:\\[1ex]
+    \quad $0.42\!-\!0.52$ without estimation uncertainty\\[0.5ex]
+    \quad $0.42\!-\!0.52$ including estimation uncertainty\\[6ex]
+    \item Also, the confidence interval around the estimated M is quite narrow:
+    $0.11\!-\!0.13$\\[1ex]
+  \end{itemize}
+  \centering\includegraphics[width=0.89\textwidth]{natmort_confint_2023}
+  \vspace{2ex}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Likelihood Conflict Between Length and Weight Comps}
+  \vspace{1ex}
+  \centering\includegraphics[height=0.75\textheight]{likelihood_profile}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}\Large
+  \centering\darkgreen\bf New Issues
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Uncertainty About Indonesian Catches}
+  \vspace{1ex}
+  \centering\includegraphics[height=0.75\textheight]{indonesia_1}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Uncertainty About Indonesian Catches}
+  \vspace{1ex}
+  \centering\includegraphics[height=0.75\textheight]{indonesia_2}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Uncertainty About Indonesian Catches}
+  \vspace{1ex}
+  \centering\includegraphics[height=0.75\textheight]{indonesia_3}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}\Large
+  \centering\darkgreen\bf New Features in MULTIFAN-CL
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Length-based selectivity}
+  Email from Nick Davies yesterday:\\[3ex]
+  \begin{quotation}\noindent
+    Yes, the length-based selectivity feature as used for SKJ2025 can be applied
+    to any stock assessment. Note that it differs fundamentally from that of
+    SS3, in that it conserves the separability assumption for time-invariant
+    selectivity-at-age for the fishing mortality calculations.
+  \end{quotation}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}\Large
+  \centering\darkgreen\bf Things to Report to PAW
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Things to Report to PAW}
+  \vspace{2ex}
+  \begin{itemize}
+    \item[] {\bf\darkblue ~}
+    \comment{~\\[1ex]
+      \h{38.5ex} ~}\\[4ex]
+    \item[] {\bf\darkblue Issues in 2023 Assessment}
+    \comment{convergence/jittering, narrow confidence intervals,\\[1ex]
+      \h{32.2ex} likelihood conflict between length and weight comps}\\[4ex]
+    \item[] {\bf\darkblue New Issues}
+    \comment{uncertainty about Indonesian catches}\\[4ex]
+    \item[] {\bf\darkblue New Features in MULTIFAN-CL}
+    \comment{length-based selectivity}\\[4ex]
+    \item[] {\bf\darkblue ~}
+    \comment{~}\\[4ex]
+  \end{itemize}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}
+  \vspace{4ex}
+  These slides:\\[2ex]
+  \begin{center}
+    \blue\url{https://github.com/PacificCommunity/ofp-sam-yft-2026-assessment}
+  \end{center}
+\end{frame}
+
+\end{document}
