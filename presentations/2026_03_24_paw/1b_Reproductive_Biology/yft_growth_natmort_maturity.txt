@@ -1,0 +1,51 @@
+Growth, Natural Mortality, and Maturity of Yellowfin Tuna
+2023 SPC Pre-assessmentWorkshop
+25-28th April
+P12 - Arni Magnusson
+Growth
+The YFT 2020 assessment used three approaches to estimate growth:
+1. Modal - estimate von Bertalanffy growth curve using size composition data only
+2. CondAge - estimate von Bertalanffy curve using otoliths and all other data in
+the assessment model
+3. Otolith - fixed Richards growth curve is input into the stock assessment model,
+after being externally estimated
+The Peer Review panel recommends estimating the growth curve internally
+Growth
+MULTIFAN-CL supports von Bertalanffy and Richards growth curves
+Internal estimation of a Richards growth curve was explored during the Peer Review,
+but the initial results were subject to some estimation problems
+Growth
+Natural Mortality
+The YFT 2020 assessment used a three-phase natural mortality curve
+to account for the higher mortality of females at older ages
+M-at-age was calculated using an approach applied to other tunas in
+the WCPO and EPO
+The generally increasing proportion of males observed in the catch with
+increasing size is assumed to be due to an increase in the natural mortality
+of females at larger sizes
+Natural Mortality
+Natural Mortality
+The growth curve and sex-ratio-at-length vector are key inputs for calculating M-at-age
+The Review Panel endorsed the general approach for estimating M-at-age
+The Review Panel recommends continuing the current approach with the base M set
+to 0.2 but including alternative values for base M in the uncertainty grid
+Reproductive Potential
+Reproductive potential is calculated as the product of three length-based processes:
+1. Proportion of females at length
+2. Maturity at length (of females)
+3. Fecundity at length (of mature females)
+Sex ratio at length is calculated from Regional Observer Program data in SPC holdings
+Maturity and fecundity are calculated as functions of length, using coefficients (Itano 2000)
+Reproductive Potential
+TheYFT 2020 assessment used a
+new feature in MFCL, converting
+maturity-at-length to maturity-at-age
+within the model, rather than externally
+The YFT 2020 assessment used a new feature in MFCL, converting maturity-at-length
+to maturity-at-age within the model, rather than externally
+The Review Panel noted that the YFT 2020 assessment used an updated vector of
+sex-ratio-at-length for the WCPO, differing substantially from the 2017 assessment
+The Review Panel also noted that future assessments of YFT and ideally other
+species should provide consistent output on how changes in assumptions (e.g., M)
+affect sex ratios and reproductive output (and vice versa)
+Reproductive Potential
