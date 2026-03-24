@@ -17,14 +17,49 @@
 
 % ______________________________________________________________________________
 
-\begin{frame}{Reproductive potential}
-  Email from Nick Davies yesterday:\\[3ex]
-  \begin{quotation}\noindent
-    Yes, the length-based selectivity feature as used for SKJ2025 can be applied
-    to any stock assessment. Note that it differs fundamentally from that of
-    SS3, in that it conserves the separability assumption for time-invariant
-    selectivity-at-age for the fishing mortality calculations.
-  \end{quotation}
+\begin{frame}{Reproductive potential}\small
+  \textgreen{From the 2023 assessment report}\\[2ex]
+  \begin{quote}
+    The reproductive potential ogive is an important component\\
+    of the assessment structure as it translates model estimates of\\
+    total population biomass to the relevant management quantity,\\
+    spawning potential biomass (SB).\\[3ex]
+  \end{quote}
+  \begin{quote}
+    Assumptions about maturity do not affect the process of fitting\\
+    the model, only the reference point values.\\[3ex]
+    The approach for calculating the reproductive potential at length\\
+    ogive in this assessment is the same as the 2020 assessment.
+  \end{quote}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Reproductive potential}\small
+  Reproductive potential is calculated as the product of three\\
+  length-based processes:\\[1ex]
+  \begin{enumerate}
+    \item Proportion of females at length
+    \item Maturity at length (of females)
+    \item Fecundity at length (of mature females)
+  \end{enumerate}
+  \vspace{2ex}
+  Sex ratio at length is calculated from Regional Observer Program\\
+  data in SPC holdings\\[3ex]
+  Maturity and fecundity are calculated as functions of length,\\
+  using coefficients (Itano 2000)\\[2ex]
+  \qquad
+  $Mat_L ~=~ \left(1-(1\!-\!m) \,\times\, e^{-K(L-x)}\right)^{1/(1-m)}$
+  \h{10ex}
+  $Fecundity ~=~ a\times L^{\,b}$
+  \vspace{2ex}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Reproductive potential}\small
+  \centering
+  \includegraphics[width=0.5\textwidth]{maturity}
 \end{frame}
 
 % ______________________________________________________________________________
