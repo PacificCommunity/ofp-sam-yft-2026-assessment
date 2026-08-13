@@ -1,7 +1,7 @@
 ## Preprocess data, write TAF data tables
 
 ## Before: assessments (boot/data)
-## After: dep14.csv, dep17.csv, dep20.csv, dep23.csv (data)
+## After: dep14.csv, dep17.csv, dep20.csv, dep23.csv, dep26.csv (data)
 
 library(TAF)
 library(FLR4MFCL)
@@ -25,9 +25,14 @@ cat("Reading 2023 assessment\n")
 rep23 <- read.MFCLRep(finalRep("boot/data/assessments/2023"))
 dep23 <- as.data.frame(SBSBF0(rep23))[c("year", "data")]
 names(dep23)[2] <- "dep23"
+cat("Reading 2026 assessment\n")
+rep26 <- read.MFCLRep(finalRep("boot/data/assessments/2026"))
+dep26 <- as.data.frame(SBSBF0(rep26))[c("year", "data")]
+names(dep26)[2] <- "dep26"
 
 # Write TAF tables
 write.taf(dep14, dir="data")
 write.taf(dep17, dir="data")
 write.taf(dep20, dir="data")
 write.taf(dep23, dir="data")
+write.taf(dep26, dir="data")
