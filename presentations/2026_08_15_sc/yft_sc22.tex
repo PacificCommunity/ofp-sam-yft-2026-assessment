@@ -1,14 +1,17 @@
 \documentclass[aspectratio=169]{beamer}
 \usepackage{spc}
+\usepackage{fontawesome}
 \usepackage{textpos}
 \begin{document}
 
 \begin{frame}
-  \title{\vspace{-5ex}\darkblue Yellowfin 2026 Assessment\\[2ex]
-    \it\large\darkgray Overview of Results and Discussion Points}
-  \author{\vspace{-10ex}\darkgray\bf Arni Magnusson}
-  \date{\darkgreen FFA Caucus\\[0.5ex]
-    13 August 2026, Apia}
+  \title{\vspace{-5ex}\darkblue Stock Assessment of Yellowfin Tuna\\
+    in the WCPO}
+  \author{\vspace{-10ex}\darkgray\bf A.~Magnusson, T.~Teears, K.~Kim,
+    J.~Hampton, N.~Davies,\\[0.5ex]
+    J.~Scutt Phillips, C.~Castillo Jord\'an, T.~Peatman, P.~Hamer}
+  \date{\darkgreen WCPFC-SC22-2026/SA-WP-05\\[0.5ex]
+    15 August 2026, Apia}
   \titlepage
   \begin{textblock}{0}(10,0.5)
     \includegraphics[width=4cm]{fish_yellowfin}
@@ -17,56 +20,50 @@
 
 % ______________________________________________________________________________
 
-\begin{frame}{Model development}\fns
+\begin{frame}{PAW 2026 discussion points}\fns
   \vspace{-2ex}
   \begin{columns}[T]
     \column{0.45\textwidth}
     \textblue{Spatial structure}\\[-0.8ex]
-    \begin{enumerate}\setlength\itemsep{-0.3ex}
-      \item Consider single-region or equatorial model
-      \item Revise regional structure (esp. bigeye)\\[1.5ex]
+    \begin{enumerate}\setlength\itemsep{-0.1ex}
+      \item Consider single-region or equatorial model\\[1.4ex]
     \end{enumerate}
     \textblue{Fisheries}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{2}\setlength\itemsep{-0.3ex}
+    \begin{enumerate}\setcounter{enumi}{1}\setlength\itemsep{-0.1ex}
       \item Convert weight comps to length comps
       \item Combine fisheries
-      \item Lower effective sample size in general
-      \item Analyze data conflict, identify and test different
-      approaches
-      \item Possibly reduce sample size in regions without otolith data
-      \item Consider different scenarios for Indonesian catches
-      \item Consider using size composition from predominant nation in some
-      fisheries
+      \item Dirichlet-multinomial sample sizes\\[1.4ex]
     \end{enumerate}
     \textblue{Recruitment}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{9}\setlength\itemsep{-0.3ex}
-      \item Orthogonal polynomial recruitment\\[1.2ex]
+    \begin{enumerate}\setcounter{enumi}{4}\setlength\itemsep{-0.1ex}
+      \item Orthogonal polynomial recruitment\\[1.4ex]
     \end{enumerate}
-    \column{0.45\textwidth}
     \textblue{Natural mortality}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{10}\setlength\itemsep{-0.3ex}
-      \item Fix at different levels of M\\[1.2ex]
+    \begin{enumerate}\setcounter{enumi}{5}\setlength\itemsep{-0.1ex}
+      \item Fix M at different levels\\[1.4ex]
     \end{enumerate}
     \textblue{Movement}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{11}\setlength\itemsep{-0.3ex}
-      \item SEAPODYM coefficients\\[1.2ex]
+    \begin{enumerate}\setcounter{enumi}{6}\setlength\itemsep{-0.1ex}
+      \item SEAPODYM movement coefficients\\[1.4ex]
     \end{enumerate}
+    \column{0.45\textwidth}
     \textblue{Growth}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{12}\setlength\itemsep{-0.3ex}
+    \begin{enumerate}\setcounter{enumi}{7}\setlength\itemsep{-0.1ex}
       \item Reweight otoliths based on location
-      \item Richards curve\\[1.2ex]
+      \item Richards growth curve\\[1.4ex]
     \end{enumerate}
     \textblue{Selectivity}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{14}\setlength\itemsep{-0.3ex}
-      \item Length-based\\[1.2ex]
+    \begin{enumerate}\setcounter{enumi}{9}\setlength\itemsep{-0.1ex}
+      \item Length-based selectivity\\[1.4ex]
     \end{enumerate}
     \textblue{Tags}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{15}\setlength\itemsep{-0.3ex}
-      \item Mixing period for each release group\\[1.2ex]
+    \begin{enumerate}\setcounter{enumi}{10}\setlength\itemsep{-0.1ex}
+      \item Mixing period for each release group\\[1.4ex]
     \end{enumerate}
     \textblue{CPUE}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{16}\setlength\itemsep{-0.3ex}
-      \item Alternative indices
+    \begin{enumerate}\setcounter{enumi}{11}\setlength\itemsep{-0.1ex}
+      \item Regional CPUE analysis w/thermal limits
+      \item Regional scaling with a prior
       \item Time-varying CV
       \item Effort creep
     \end{enumerate}
@@ -75,71 +72,141 @@
 
 % ______________________________________________________________________________
 
+\begin{frame}{New features in the assessment}\fns
+  \vspace{-2ex}
+  \begin{columns}[T]
+    \column{0.45\textwidth}
+    \phantom{Spatial structure}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\faCheck] {\darkgreen Consider single-region or equatorial
+        model}\\[1.4ex]
+    \end{itemize}
+    \phantom{Fisheries}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\faCheck] {\darkgreen Convert weight comps to length comps}
+      \item[\faCheck] {\darkgreen Combine fisheries}
+      \item[\gray-~] {\gray Dirichlet-multinomial sample sizes}\\[1.4ex]
+    \end{itemize}
+    \phantom{Recruitment}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\faCheck] {\darkgreen Orthogonal polynomial recruitment}\\[1.4ex]
+    \end{itemize}
+    \phantom{Natural mortality}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\faCheck] {\darkgreen Fix M at different levels}\\[1.4ex]
+    \end{itemize}
+    \phantom{Movement}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\gray-~] {\gray SEAPODYM movement coefficients}\\[1.4ex]
+    \end{itemize}
+    \column{0.45\textwidth}
+    \phantom{Growth}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\faCheck] {\darkgreen Reweight otoliths based on location}
+      \item[\gray-~] {\gray Richards growth curve}\\[1.4ex]
+    \end{itemize}
+    \phantom{Selectivity}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\gray-~] {\gray Length-based selectivity}\\[1.4ex]
+    \end{itemize}
+    \phantom{Tags}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\gray-~] {\gray Mixing period for each release group}\\[1.4ex]
+    \end{itemize}
+    \phantom{CPUE}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\faCheck] {\darkgreen Regional CPUE analysis w/thermal limits}
+      \item[\faCheck] {\darkgreen Regional scaling with a prior}
+      \item[\faCheck] {\darkgreen Time-varying CV}
+      \item[\faCheck] {\darkgreen Effort creep}
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+% ______________________________________________________________________________
+
+{
+  \setbeamertemplate{background}{}
+  \begin{frame}
+    \vspace{2ex}
+    \centering
+    \includegraphics[width=0.6\textwidth]{map_5regions}
+  \end{frame}
+}
+
+% ______________________________________________________________________________
+
+{
+  \setbeamertemplate{background}{}
+  \begin{frame}
+    \vspace{4ex}
+    \centering
+    \includegraphics[width=0.8\textwidth]{catch_hist_full}
+  \end{frame}
+}
+
+% ______________________________________________________________________________
+
+{
+  \setbeamertemplate{background}{}
+  \begin{frame}
+    \vspace{4ex}
+    \centering
+    \includegraphics[width=0.8\textwidth]{catch_map}
+  \end{frame}
+}
+
+% ______________________________________________________________________________
+
+{
+  \setbeamertemplate{background}{}
+  \begin{frame}
+    \vspace{4ex}
+    \centering
+    \includegraphics[width=0.7\textwidth]{violin_depletion}
+  \end{frame}
+}
+
+% ______________________________________________________________________________
+
+{
+  \setbeamertemplate{background}{}
+  \begin{frame}
+    \vspace{4ex}
+    \centering
+    \includegraphics[width=0.8\textwidth]{combined_kobe_majuro_status}
+  \end{frame}
+}
+
+% ______________________________________________________________________________
+
+{
+  \setbeamertemplate{background}{}
+  \begin{frame}
+    \vspace{-1ex}
+    \centering
+    \includegraphics[width=0.8\textwidth]{depletion_without_2026}
+  \end{frame}
+}
+
+% ______________________________________________________________________________
+
+{
+  \setbeamertemplate{background}{}
+  \begin{frame}
+    \vspace{-1ex}
+    \centering
+    \includegraphics[width=0.8\textwidth]{depletion}
+  \end{frame}
+}
+
+% ______________________________________________________________________________
+
 \begin{frame}
   \vspace{6ex}
   \centering
   \darkgray{Shiny app with stepwise results:}\\[4ex]
   \blue\url{https://ofp-sam.shinyapps.io/yft-2026-stepwise}
-\end{frame}
-
-% ______________________________________________________________________________
-
-\setbeamertemplate{background}{}
-
-% ______________________________________________________________________________
-
-\begin{frame}
-  \vspace{4ex}
-  \centering
-  \includegraphics[width=0.55\textwidth]{map_5regions}
-\end{frame}
-
-% ______________________________________________________________________________
-
-\begin{frame}
-  \vspace{4ex}
-  \centering
-  \includegraphics[width=0.8\textwidth]{catch_hist_full}
-\end{frame}
-
-% ______________________________________________________________________________
-
-\begin{frame}
-  \vspace{4ex}
-  \centering
-  \includegraphics[width=0.8\textwidth]{catch_map}
-\end{frame}
-
-% ______________________________________________________________________________
-
-\begin{frame}
-  \vspace{4ex}
-  \centering
-  \includegraphics[width=0.7\textwidth]{violin_depletion}
-\end{frame}
-
-% ______________________________________________________________________________
-
-\begin{frame}
-  \vspace{4ex}
-  \centering
-  \includegraphics[width=0.8\textwidth]{combined_kobe_majuro_status}
-\end{frame}
-
-% ______________________________________________________________________________
-
-\begin{frame}
-  \vspace{-1ex}
-  \centering
-  \includegraphics[width=0.8\textwidth]{depletion_without_2026}
-\end{frame}
-
-% ______________________________________________________________________________
-
-\begin{frame}
-  \vspace{-1ex}
-  \centering
-  \includegraphics[width=0.8\textwidth]{depletion}
 \end{frame}
 
 \end{document}
