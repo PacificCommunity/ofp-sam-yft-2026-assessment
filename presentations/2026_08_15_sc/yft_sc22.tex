@@ -20,6 +20,19 @@
 
 % ______________________________________________________________________________
 
+\begin{frame}{Objectives in the stock assessment}
+  \begin{itemize}
+    \item Deliver report \textblue{on time}\\[2ex]
+    \item Develop a model with \textblue{good convergence properties}\\[2ex]
+    \item \textblue{Simplify} the model as much as possible\\[2ex]
+    \item Incorporate \textblue{innovations} recommended by experts, including
+    the SC\\[2ex]
+    \item Check for and \textblue{remove errors}\\[2ex]
+  \end{itemize}
+\end{frame}
+
+% ______________________________________________________________________________
+
 \begin{frame}{PAW 2026 discussion points}\fns
   \vspace{-2ex}
   \begin{columns}[T]
@@ -131,6 +144,28 @@
 
 % ______________________________________________________________________________
 
+\begin{frame}{Model overview}
+  \begin{itemize}
+    \item[] MULTIFAN-CL version 2.2.7.9\\[1.0ex]
+    \item[] 5 regions\\[1.0ex]
+    \item[] 1952--2024, quarterly time steps\\[1.0ex]
+    \item[] 31 fisheries + 5 CPUE indices\\[1.0ex]
+    \item[] Fixed M at terminal age, Lorenzen shape\\[1.0ex]
+    \item[] Internally estimated growth, von Bertalanffy\\[1.0ex]
+    \item[] Major reduction in parameters 1901 $\rightarrow$ 454 (was 11,688 in
+    2020 assessment)\\[1.0ex]
+    \item[] Regional scaling with multivariate normal prior\\[1.0ex]
+    \item[] Likelihoods based on model fits to data\\[1.0ex]
+    \begin{tabular}{ll}
+      \fns - Length comps & \fns - CAAL (otoliths)\\
+      \fns - CPUE         & \fns - Tags           \\
+    \end{tabular}
+  \end{itemize}
+  \vspace{1ex}
+\end{frame}
+
+% ______________________________________________________________________________
+
 \begin{frame}{Regions}
   \vspace{-2ex}
   \centering
@@ -154,6 +189,28 @@
 
 % ______________________________________________________________________________
 
+\begin{frame}{Stepwise}
+  \centering
+  \includegraphics[width=0.75\textwidth]{stepwise_depletion}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Stepwise}
+  \vspace{-2ex}
+  \centering
+  \includegraphics[width=0.38\textwidth]{stepwise_changes}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Fit to longline and index fisheries}
+  \centering
+  \includegraphics[width=0.7\textwidth]{length_fit_aggregated_ll}
+\end{frame}
+
+% ______________________________________________________________________________
+
 \begin{frame}{Growth}
   \centering
   \includegraphics[width=0.72\textwidth]{growth_slide}
@@ -161,10 +218,17 @@
 
 % ______________________________________________________________________________
 
-\begin{frame}{Regional scaling}
-  \vspace{2ex}
+\begin{frame}{Natural mortality}
   \centering
-  \includegraphics[width=0.72\textwidth]{reg_scaling}
+  \includegraphics[width=0.72\textwidth]{natmort_slide}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Regional scaling}
+  \vspace{1ex}
+  \centering
+  \includegraphics[width=0.78\textwidth]{reg_scaling}
 \end{frame}
 
 % ______________________________________________________________________________
@@ -173,6 +237,67 @@
   \vspace{2ex}
   \centering
   \includegraphics[width=0.6\textwidth]{biomass_region}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Recruitment}
+  \centering
+  \includegraphics[width=0.35\textwidth]{recruitment_region_2023}\qquad
+  \includegraphics[width=0.35\textwidth]{recruitment_trend_2023}\\
+  \includegraphics[width=0.35\textwidth]{recruitment_region_2026}\qquad
+  \includegraphics[width=0.35\textwidth]{recruitment_trend_2026}\\
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Fished and unfished biomass by region}
+  \vspace{2ex}
+  \centering
+  \includegraphics[width=0.8\textwidth]{fished_unfished_SB_2026}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Depletion}
+  \centering
+  \includegraphics[width=0.55\textwidth]{depletion_final}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Jitter analysis}
+  \centering
+  \includegraphics[width=0.7\textwidth]{jitter_scatter_plot}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Likelihood profile}
+  \vspace{2ex}
+  \centering
+  \includegraphics%
+  [width=0.9\textwidth,height=0.65\textheight]{diag_profile_data_sources}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Ensemble analysis}
+  \vspace{2ex}
+  \textdarkblue{Structural uncertainty}\\[2ex]
+  \begin{itemize}\small
+    \item Effort creep: 0.5, 1.0, 1.5, 2.0, 2.5\% for the first years, half of
+    that in later years\\[1.0ex]
+    \item Length sample size: divided by 10, 20, 40\\[1.0ex]
+    \item Tag mixing period: 1, 2, 3\\[1.0ex]
+    \item Tag reporting rate during mixing period: 0=included,
+    1=excluded\\[1.0ex]
+    \item Natural mortality: continuous prior\\[1.0ex]
+    \item Steepness: continuous prior\\[3ex]
+  \end{itemize}
+  \h{10ex}
+  \includegraphics[width=0.3\textwidth]{m_density}\quad
+  \includegraphics[width=0.3\textwidth]{h_density}
 \end{frame}
 
 % ______________________________________________________________________________
@@ -194,10 +319,18 @@
 
 % ______________________________________________________________________________
 
-\begin{frame}{Comparison with previous assessments}
-  \vspace{3ex}
+\begin{frame}{Stock status}
+  \vspace{1ex}
   \centering
-  \includegraphics[width=0.75\textwidth]{depletion_without_2026}
+  \includegraphics[width=0.72\textwidth]{ensemble_est_uncert_ribbon_depletion}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Stock status}
+  \vspace{1ex}
+  \centering
+  \includegraphics[width=0.8\textwidth]{management_table}
 \end{frame}
 
 % ______________________________________________________________________________
@@ -205,16 +338,70 @@
 \begin{frame}{Comparison with previous assessments}
   \vspace{3ex}
   \centering
-  \includegraphics[width=0.75\textwidth]{depletion}
+  \includegraphics[width=0.75\textwidth]{comparison_without_2026}
 \end{frame}
 
 % ______________________________________________________________________________
 
-\begin{frame}
-  \vspace{6ex}
+\begin{frame}{Comparison with previous assessments}
+  \vspace{3ex}
   \centering
-  \darkgray{Shiny app with stepwise results:}\\[4ex]
-  \blue\url{https://ofp-sam.shinyapps.io/yft-2026-stepwise}
+  \includegraphics[width=0.75\textwidth]{comparison_assessments}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Main conclusions}\small
+  \vspace{-1ex}
+  \begin{itemize}
+    \item Spawning depletion has been relatively stable since around 2005 to the
+    present,\\
+    between 0.35 and 0.50\\[1.5ex]
+    \item All the ensemble models were above the
+    $SB_\mathrm{current}/SB_{F=0}=0.20$ limit\\
+    reference point and $F_\mathrm{current}<F_\mathrm{MSY}$
+    \item Using a prior for $M$ in the ensemble analysis improved the
+    incorporation of\\
+    uncertainty about this key parameter in the assessment\\[1.5ex]
+    \item Convergence problems remain in the model, likelihood conflict between
+    the\\
+    data sources\\[1.5ex]
+    \item Slightly lower estimated relative stock size compared to previous
+    assessment,\\
+    primarily because of model settings related to tags\\[1.5ex]
+    \item Orthogonal polynomial recruitment reduced the number of estimated\\
+    parameters and improved model convergence\\[1.5ex]
+    \item Effort creep incorporated in the assessment for the first
+    time\\[1.5ex]
+  \end{itemize}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Recommendations for further work}\small
+  \vspace{-1ex}
+  \begin{enumerate}
+    \item Examine and descibe data conflict in greater detail\\[3ex]
+    \item Consider alternative regional structure\\[3ex]
+    \item Explore how growth curve is affected by the tagging data
+    likelihood\\[3ex]
+    \item Workshop that focuses on how best to analyze the tagging data for the
+    assessment\\[3ex]
+  \end{enumerate}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Browse results online}
+  \vspace{4ex}
+  \centering
+  \textdarkgray{Shiny app with stepwise results:}\\[2ex]
+  \textblue{\url{https://ofp-sam.shinyapps.io/yft-2026-stepwise}}\\[10ex]
+  \darkgray
+  After SC:\\[2ex]
+  \tt
+  https://github.com/PacificCommunity/ofp-sam-yft-2026-diagnostic\\[1ex]
+  https://github.com/PacificCommunity/ofp-sam-yft-2026-ensemble
 \end{frame}
 
 \end{document}
