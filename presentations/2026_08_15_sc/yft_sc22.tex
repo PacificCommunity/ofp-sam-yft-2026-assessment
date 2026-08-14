@@ -56,16 +56,19 @@
     \begin{enumerate}\setcounter{enumi}{9}\setlength\itemsep{-0.1ex}
       \item Length-based selectivity\\[1.4ex]
     \end{enumerate}
-    \textblue{Tags}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{10}\setlength\itemsep{-0.1ex}
-      \item Mixing period for each release group\\[1.4ex]
-    \end{enumerate}
     \textblue{CPUE}\\[-0.8ex]
-    \begin{enumerate}\setcounter{enumi}{11}\setlength\itemsep{-0.1ex}
+    \begin{enumerate}\setcounter{enumi}{10}\setlength\itemsep{-0.1ex}
       \item Regional CPUE analysis w/thermal limits
       \item Regional scaling with a prior
       \item Time-varying CV
       \item Effort creep
+    \end{enumerate}
+    \textblue{Tags}\\[-0.8ex]
+    \begin{enumerate}\setcounter{enumi}{14}\setlength\itemsep{-0.1ex}
+      \item Mixing period for each release group
+      \white \item[{\white\bf +}] Tag rep. rates excl. during mixing period
+      \white \item[{\white\bf +}] Tag variance with overdispersion
+      $\tau\!=\!2$\\[1.4ex]
     \end{enumerate}
   \end{columns}
 \end{frame}
@@ -109,16 +112,19 @@
     \begin{itemize}\setlength\itemsep{-0.1ex}
       \item[\gray-~] {\gray Length-based selectivity}\\[1.4ex]
     \end{itemize}
-    \phantom{Tags}\\[-0.8ex]
-    \begin{itemize}\setlength\itemsep{-0.1ex}
-      \item[\gray-~] {\gray Mixing period for each release group}\\[1.4ex]
-    \end{itemize}
     \phantom{CPUE}\\[-0.8ex]
     \begin{itemize}\setlength\itemsep{-0.1ex}
       \item[\faCheck] {\darkgreen Regional CPUE analysis w/thermal limits}
       \item[\faCheck] {\darkgreen Regional scaling with a prior}
       \item[\faCheck] {\darkgreen Time-varying CV}
       \item[\faCheck] {\darkgreen Effort creep}
+    \end{itemize}
+    \phantom{Tags}\\[-0.8ex]
+    \begin{itemize}\setlength\itemsep{-0.1ex}
+      \item[\gray-~] {\gray Mixing period for each release group}
+      \item[{\bf +}] {\darkgreen Tag rep. rates excl. during mixing period}
+      \item[{\bf +}] {\darkgreen Tag variance with overdispersion
+        $\tau\!=\!2$}\\[1.4ex]
     \end{itemize}
   \end{columns}
 \end{frame}
@@ -148,6 +154,29 @@
 
 % ______________________________________________________________________________
 
+\begin{frame}{Growth}
+  \centering
+  \includegraphics[width=0.72\textwidth]{growth_slide}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Regional scaling}
+  \vspace{2ex}
+  \centering
+  \includegraphics[width=0.72\textwidth]{reg_scaling}
+\end{frame}
+
+% ______________________________________________________________________________
+
+\begin{frame}{Biomass distribution between regions}
+  \vspace{2ex}
+  \centering
+  \includegraphics[width=0.6\textwidth]{biomass_region}
+\end{frame}
+
+% ______________________________________________________________________________
+
 \begin{frame}{Ensemble analysis}
   \vspace{1ex}
   \centering
@@ -165,25 +194,19 @@
 
 % ______________________________________________________________________________
 
-{
-  \setbeamertemplate{background}{}
-  \begin{frame}
-    \vspace{-1ex}
-    \centering
-    \includegraphics[width=0.8\textwidth]{depletion_without_2026}
-  \end{frame}
-}
+\begin{frame}{Comparison with previous assessments}
+  \vspace{3ex}
+  \centering
+  \includegraphics[width=0.75\textwidth]{depletion_without_2026}
+\end{frame}
 
 % ______________________________________________________________________________
 
-{
-  \setbeamertemplate{background}{}
-  \begin{frame}
-    \vspace{-1ex}
-    \centering
-    \includegraphics[width=0.8\textwidth]{depletion}
-  \end{frame}
-}
+\begin{frame}{Comparison with previous assessments}
+  \vspace{3ex}
+  \centering
+  \includegraphics[width=0.75\textwidth]{depletion}
+\end{frame}
 
 % ______________________________________________________________________________
 
